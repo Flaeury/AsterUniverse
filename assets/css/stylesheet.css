@@ -1,61 +1,99 @@
-body {
-    background-color:black;
-    font-family: "Poppins", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+.body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 1vw;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1vw black;
+  border-radius: 1vw;
 }
 
-p{
-    color: white;
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 0.3vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+p {
+  color: white;
 }
 h2 {
-    color: white;
+  color: white;
 }
 .container {
-    width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
 }
 #LOGOASTER {
-    width: 100%;
-    max-width: 170px;
+  width: 100%;
+  max-width: 11vw;
 }
 .cabecalho {
-    padding: 20px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.container1 {
+  display: flex;
+  justify-content: space-between;
+}
+#btnExit {
+  background-color: rgb(34, 34, 34);
+  border: none;
+  font-weight: bold;
+  font-size: 0.9vw;
+  padding: 0.5vw 1.3vw;
+  border-radius: 0.35vw;
+  float: left;
+  cursor: pointer;
+}
+#btnExit p {
+  color: white !important;
+  font-family: "Montserrat", sans-serif;
+}
+#btnExit:hover {
+  background-color: rgb(172, 5, 5);
+  color: white;
+  transition: all 0.3s;
 }
 .cabecalho .container1 {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 95%;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
 }
 .cabecalho figure img {
-    width: 100%;
-    max-width: 160px;
-}
-.cabecalho .cabecalho__logoAster {
-    border-right: 1px solid #fff;
-    margin-right: 15px;
+  width: 100%;
+  max-width: 16vw;
 }
 .secaoDetalhesConta {
-    color: #fff;
-    padding: 60px 0 30px;
+  color: #fff;
+  padding: 2vw 0 3vw;
 }
 .secaoDetalhesConta__sobreUsuario {
-    display: flex;   
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 0 1vw;
 }
 .secaoDetalhesConta__sobreUsuario p {
-    font-size: 18px;
-    margin-left: 10px;
+  font-size: 1.3vw;
+  margin-left: 1vw;
 }
 .secaoDetalhesConta__sobreUsuario img {
   width: 100%;
-  max-width: 68px;
+  max-width: 3vw;
+  float: right;
 }
 .secaoDetalhesConta__sobreUsuario p strong {
-    display: block;
-    font-weight: bold;
+  display: block;
+  font-weight: bold;
 }
 .secaoDetalhesConta__sobreUsuario--nome,
 .secaoDetalhesConta__sobreUsuario--icones {
@@ -64,351 +102,384 @@ h2 {
 }
 .secaoDetalhesConta__sobreUsuario--icones img {
   width: 100%;
-  max-width: 34px;
-  margin: 0 0 0 20px;
+  max-width: 2vw;
+  margin: 0 0 0 1.5vw;
+  cursor: pointer;
 }
 .secaoDetalhesConta__sobreSaldo {
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0;
-    align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  align-items: center;
 }
 .secaoDetalhesConta__sobreSaldo p {
-    font-size: 18px;
-    line-height: 22px;
+  font-size: 1.1vw;
+  line-height: 22px;
 }
 .secaoDetalhesConta__sobreSaldo p strong {
-    display: block;
-    font-weight: bold;
+  display: block;
+  font-weight: bold;
 }
-.secaoDetalhesConta__sobreSaldo button {
-    background-color: #fff;
-    border: none;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px 60px;
-    cursor: pointer;
-    border-radius: 10px;
+
+#btnExtrato {
+  background-color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1vw;
+  padding: 0.6vw 2.3vw;
+  border-radius: 0.4vw;
+  float: right;
+  cursor: pointer;
 }
 .secaoDetalhesConta__opcoesTransacoes {
-    display: flex;
-    justify-content: space-between;
-}
-.secaoDetalhesConta__opcoesTransacoes li {
-    background-color: #1e1e1e;
-    width: 170px;
-    height: 177px;
-    border-radius: 20px;
-    padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .secaoDetalhesConta__opcoesTransacoes li img {
-    width: 100%;
-    max-width: 60px;
-    cursor: pointer;
+  width: 100%;
+  max-width: 60px;
+  cursor: pointer;
 }
-.secaoDetalhesConta__opcoesTransacoes li p {
-    font-weight: bold;
-    font-size: 19px;
-    margin-top: 10px;
-    line-height: 25px;
-    width: 80px;
-    cursor: pointer;
-}
+
 .secaoTransacao {
-    border-radius: 20px 20px 0 0;
-    border-bottom: 15px solid #f0f0f0;
-    padding: 20px 0;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 15px solid #f0f0f0;
+  padding: 20px 0;
 }
 .secaoTransacao__avisoSelecao p {
-    font-size: 25px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
-    padding: 30px 60px;
-    border-radius: 10px 10px 0 0;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    background-color:#1e1e1e;
-    text-align: center;
-    cursor: pointer;
+  font-size: 25px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  padding: 30px 60px;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #1e1e1e;
+  text-align: center;
+  cursor: pointer;
 }
 .secaoTransacao__avisoSelecao img {
-    width: 100%;
-    margin: 30px 0 90px;
+  width: 100%;
+  margin: 30px 0 90px;
 }
 .secaoTransacao__qrCode {
-    text-align: center;
+  text-align: center;
 }
 .secaoTransacao__qrCode img {
-    max-width: 180px;
-    cursor: text;
-    margin: 100px 0 0 0;
+  max-width: 180px;
+  cursor: text;
+  margin: 100px 0 0 0;
 }
 .secaoTransacao__qrCode p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px 0;
 }
-.secaoTransacao__qrCode button {
-    background-color:blueviolet;
-    border: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 10px;
-    margin: 40px 0 20px;
-    padding: 15px 100px;
-    cursor: pointer;
+
+.card {
+  position: relative;
+  background: #111111;
+  width: 7.5vw;
+  height: 9.5vw;
+  border-radius: 1.8vw;
+  padding: 4vw 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 1vw;
+  cursor: pointer;
 }
-.secaoTransacao__qrCode a {
-    display: block;
-    color: white;
-    font-weight: bold;
-    margin: 0 10px 100px 0;
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: blueviolet;
+  transition: all 0.3s;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+.card1:hover:after {
+  content: "Converter";
+  font-size: 1vw;
+}
+.card2:hover:after {
+  content: "NFT";
+  font-size: 1vw;
+}
+.card3:hover:after {
+  content: "Qr Code";
+  font-size: 1vw;
+}
+.card4:hover:after {
+  content: "DeFi";
+  font-size: 1vw;
+}
+.card5:hover:after {
+  content: "Rendimento";
+  font-size: 1vw;
 }
 
 .NFT__button {
-    background-color:blueviolet;
-    border: none;
-    color: white;
-    font-size: 13px;
-    font-weight: bold;
-    border-radius: 5px;
-    margin: 15px 0 10px;
-    padding: 10px 40px;
-    cursor: pointer;
-    font-family:'Montserrat', sans-serif;
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 15px 0 10px;
+  padding: 10px 40px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
 }
-.secaoTransacao__boxOpcao input[type=file] {
-    display: none;
-    color: #fff;
+.secaoTransacao__boxOpcao input[type="file"] {
+  display: none;
+  color: #fff;
 }
 label {
-    color:white;
-    background-color: rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    
+  color: white;
+  background-color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
-.secaoTransacao__boxOpcao input[type=search] {
-    border-radius: 3px;
-    width: 70%;
-    max-width: 70%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    border: inset;
-    color: black;
+.secaoTransacao__boxOpcao input[type="search"] {
+  border-radius: 3px;
+  width: 70%;
+  max-width: 70%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  border: inset;
+  color: black;
 }
 .nft__Image {
-    width: 100%;
-    max-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }
-
-
 
 .secaoTransacao__pixLista h2 {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    align-items: center; 
-    font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
 }
-  .content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .typedtext {
-    margin-top: 0;
-    border-right: 2px solid #fff;
-    animation: blinkTextCursor 800ms steps(44) infinite normal;
-    height: 40px;
-    margin-bottom: 1px;
-    color: #fff;
-    display: block;
-  }
-  
-  @keyframes blinkTextCursor {
-    from {
-      border-right-color: #fff;
-    }
-    to {
-      border-right-color: transparent;
-    }
-  }
-
-.secaoTransacao__pix {
-    display: inline;
-    text-align: center;
-    font-size: 17px;
-    font-weight: bold;
-}
-  .secaoTransacao__boxOpcao {
-    display: inline-block;
-    align-items: center;
-    border: 1px solid blueviolet;
-    width: 550px;
-    max-width: 550px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-    margin: 20px 0 90px 0;
-  }
-  .secaoTransacao__boxOpcaoImg1 {
-    width: 100%;
-    max-width: 100px;
-    width: 70px; 
-    margin-bottom: 15px;
-  }
-  .secaoTransacao__boxOpcaoImg2 {
-    width: 100%;
-    max-width: 100px;
-    width: 70px; 
-    margin-bottom: 15px;
-  }
-
-  .secaoTransacao__boxOpcao p {
-    font-size: 20px;
-    line-height: 20px;
-  }
- .iconbox {
-    width: 100%;
-    max-width: 30px;
-    margin: 0 0 -10px 3px;
-}
-
-    #container {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 650px;
-    color: black;
-    border: none;
-    }
-.secaoTransacao__Rendimento h2{
-    font-weight: bold;
-    text-align: center;
-    font-size: 25px;
-    margin: 60px 0 50px 0;
-}
-.secaoTransacao__Rendimento {
-    background: linear-gradient(
-  180deg,
-  rgb(0, 0, 0) 0%,
-  rgb(74, 74, 74) 35%,
-  rgb(72, 72, 72) 45%,
-  rgb(66, 66, 66) 55%,
-  rgb(62, 62, 62) 60%,
-  rgb(53, 53, 53) 65%,
-  rgb(42, 42, 42) 70%,
-  rgb(33, 33, 33) 75%,
-  rgb(20, 20, 20) 85%,
-  rgb(5, 5, 5) 95%,
-  rgb(0, 0, 0) 100%
-);
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
-.secaoTransacao__Rendimento input[type=search]{
-    border-radius: 7px;
-    width: 100%;
-    max-width: 50%;
-    font-family:'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 17px;
-    margin: 70px 10px 250px 0;
-    height: 40px;
-    border: inset;
-    background-color: black;
-    border-color: #3d3d3d;
-    color: #fff;
+.typedtext {
+  margin-top: 0;
+  border-right: 2px solid #fff;
+  animation: blinkTextCursor 800ms steps(44) infinite normal;
+  height: 40px;
+  margin-bottom: 1px;
+  color: #fff;
+  display: block;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #fff;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.secaoTransacao__pix {
+  display: inline;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+.secaoTransacao__boxOpcao {
+  display: inline-block;
+  align-items: center;
+  border: 1px solid blueviolet;
+  width: 550px;
+  max-width: 550px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  margin: 20px 0 90px 0;
+}
+.secaoTransacao__boxOpcaoImg1 {
+  width: 100%;
+  max-width: 100px;
+  width: 70px;
+  margin-bottom: 15px;
+}
+.secaoTransacao__boxOpcaoImg2 {
+  width: 100%;
+  max-width: 100px;
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.secaoTransacao__boxOpcao p {
+  font-size: 20px;
+  line-height: 20px;
+}
+.iconbox {
+  width: 100%;
+  max-width: 30px;
+  margin: 0 0 -10px 3px;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 650px;
+  color: black;
+  border: none;
+}
+.secaoTransacao__Rendimento h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  margin: 60px 0 50px 0;
+}
+.secaoTransacao__Rendimento {
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 0) 0%,
+    rgb(74, 74, 74) 35%,
+    rgb(72, 72, 72) 45%,
+    rgb(66, 66, 66) 55%,
+    rgb(62, 62, 62) 60%,
+    rgb(53, 53, 53) 65%,
+    rgb(42, 42, 42) 70%,
+    rgb(33, 33, 33) 75%,
+    rgb(20, 20, 20) 85%,
+    rgb(5, 5, 5) 95%,
+    rgb(0, 0, 0) 100%
+  );
+  text-align: center;
+}
+.secaoTransacao__Rendimento input[type="search"] {
+  border-radius: 7px;
+  width: 100%;
+  max-width: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 70px 10px 250px 0;
+  height: 40px;
+  border: inset;
+  background-color: black;
+  border-color: #3d3d3d;
+  color: #fff;
 }
 .secaoTransacao__Rendimento input::placeholder {
-    color:rgba(233, 233, 233, 0.952);
+  color: rgba(233, 233, 233, 0.952);
 }
 .secaoTransacao__avisoSelecao img {
-    width: 100%;
-    max-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 .secaoTransacao__Conversao h2 {
-text-align: center;
-font-size: 28px;
-font-weight: bold;
-margin-bottom: 150px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 150px;
 }
 .secaoTransacao__Conversao p {
-    margin: 10px 10px;
-    font-size: 23px;
-    text-align: center;
-    cursor: pointer;
+  margin: 10px 10px;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
 }
 .secaoTransacao__Conversao img {
-    width: 100%;
-    max-width: 80px;
-    cursor: pointer;
-    margin-top: 10px;
+  width: 100%;
+  max-width: 80px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 .conversaoUl {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-.secaoTransacao__Rendimento img{
-    width: 100%;
-    max-width: 100%;
+.secaoTransacao__Rendimento img {
+  width: 100%;
+  max-width: 100%;
 }
-
-
 
 .rodape {
-    background-color: black;
-    border-color: black;
+  background-color: black;
+  border-color: black;
 }
 .rodape__menuPrincipal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .rodape__menuPrincipal li {
-text-align: center;
+  text-align: center;
 }
 .rodape a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 .rodape__menuPrincipal li a img {
-    width: 100%;
-    max-width:40px;
+  width: 100%;
+  max-width: 40px;
 }
 .rodape__menuPrincipal li a p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-#rodape__menuItem1 img{
-    width: 100%;
-    max-width: 60px;
-    transform: translateY(-20px);
+#rodape__menuItem1 img {
+  width: 100%;
+  max-width: 60px;
+  transform: translateY(-20px);
 }
 #rodape__menuItem1 p {
-    transform: translateY(-20px);
+  transform: translateY(-20px);
 }
 .rodape__menuItem--comprar {
-    transform: translateY(-35px); 
+  transform: translateY(-35px);
 }
 .rodape__menuPrincipal .rodape__menuItem--comprar a img {
-    max-width: 80px;
-  }
+  max-width: 80px;
+}
 
 /* Desafio Hover */
 
-.secaoDetalhesConta__itemTransacao:hover {
-    background-color: blueviolet;
-    color: black;
-/* */
-}
 .secaoDetalhesConta__itemTransacao figure {
   background-repeat: no-repeat;
   background-size: cover;
@@ -441,193 +512,361 @@ text-align: center;
 
 /* EFEITO HOVERS */
 .secaoDetalhesConta__itemTransacao--converter:hover figure {
-    background-image: url("./assets/img/icons/troca-de-dinheiro (1).png");
+  background-image: url("./assets/img/icons/troca-de-dinheiro (1).png");
 }
-  .secaoDetalhesConta__itemTransacao--NFT:hover figure {
-    background-image: url("./assets/img/icons/nft (1).png");
+.secaoDetalhesConta__itemTransacao--NFT:hover figure {
+  background-image: url("./assets/img/icons/nft (1).png");
 }
-  .secaoDetalhesConta__itemTransacao--qr-code:hover figure {
-    background-image: url("./assets/img/icons/varredura-qr.png");
+.secaoDetalhesConta__itemTransacao--qr-code:hover figure {
+  background-image: url("./assets/img/icons/varredura-qr.png");
 }
-  .secaoDetalhesConta__itemTransacao--Rendimento:hover figure {
-    background-image: url("./assets/img/icons/lucro.png");
+.secaoDetalhesConta__itemTransacao--Rendimento:hover figure {
+  background-image: url("./assets/img/icons/lucro.png");
 }
-  
-  .secaoDetalhesConta__itemTransacao figure img {
-    width: 100%;
-    max-width: 25px;
-    height: 20px;
-    opacity: 0;
-  }
-/* */
-  
-  @media screen and (max-width: 300px) {
-  }
-  .btn {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background-color: transparent;
-    border: 2px solid rgb(138, 43, 226);
-    border-radius: 0.6em;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-    margin: 20px;
-    padding: 0.6em 1.3em;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
 
-  }
-  .btn:hover, .btn:focus {
-    color: #fff;
-    outline: 0;
-  }
-  
-  .first {
-    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-  }
-  .first:hover {
-    box-shadow: 0 0 40px 40px rgb(138, 43, 226) inset;
-  }
+.secaoDetalhesConta__itemTransacao figure img {
+  width: 100%;
+  max-width: 25px;
+  height: 20px;
+  opacity: 0;
+}
+/* */
+
+@media screen and (max-width: 300px) {
+}
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+
+  border-radius: 0.6em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 0.6em 1.3em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.first {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+  box-shadow: 0 0 40px 40px rgb(138, 43, 226) inset;
+}
 
 .social {
-    position: fixed;
-    bottom: 150px;
-    left: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 17082019;
+  position: fixed;
+  bottom: 150px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 17082019;
 }
 
 .social .cube {
-    width: 40px;
-    height: 40px;
-    background: #272727;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    cursor: pointer;
-    font-size: 20px;
-    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, .7);
-    color: white;
+  width: 40px;
+  height: 40px;
+  background: #272727;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 .social .cube a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .social .initial {
-    transition: width 0.2s linear 0.12s, height 0.2s linear 0.12s, transform 0.2s linear 0.12s, opacity 0s linear 0.12s;
+  transition: width 0.2s linear 0.12s, height 0.2s linear 0.12s,
+    transform 0.2s linear 0.12s, opacity 0s linear 0.12s;
 }
 
 .social .social-buttons {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 120px;
-    height: 120px;
-    border-radius: 8px;
-    transform: rotate(45deg);
-    opacity: 0;
-    transition: opacity 0s linear 0.12s;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0s linear 0.12s;
 }
 
 .social .social-buttons .cube {
-    position: absolute;
+  position: absolute;
 }
 
 .social .social-buttons .cube:hover {
-    width: 70px;
-    height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
 .social .social-buttons .cube svg {
-    opacity: 0;
-    transition: opacity 0.1s linear 0.2s;
-    width: 50%;
-    transform: rotate(-45deg);
-    fill: white;
+  opacity: 0;
+  transition: opacity 0.1s linear 0.2s;
+  width: 50%;
+  transform: rotate(-45deg);
+  fill: white;
 }
 
 .social .social-buttons .cube:nth-child(1) {
-    left: 1px;
-    top: 1px;
-    transition: left 0.12s linear 0.2s, top 0.12s linear 0.2s;
+  left: 1px;
+  top: 1px;
+  transition: left 0.12s linear 0.2s, top 0.12s linear 0.2s;
 }
 
 .social .social-buttons .cube:nth-child(2) {
-    right: 1px;
-    top: 1px;
-    transition: right 0.12s linear 0.2s, top 0.12s linear 0.2s;
+  right: 1px;
+  top: 1px;
+  transition: right 0.12s linear 0.2s, top 0.12s linear 0.2s;
 }
 
 .social .social-buttons .cube:nth-child(3) {
-    left: 1px;
-    bottom: 1px;
-    transition: left 0.12s linear 0.2s, bottom 0.12s linear 0.2s;
+  left: 1px;
+  bottom: 1px;
+  transition: left 0.12s linear 0.2s, bottom 0.12s linear 0.2s;
 }
 
 .social .social-buttons .cube:nth-child(4) {
-    right: 1px;
-    bottom: 1px;
-    transition: right 0.12s linear 0.2s, bottom 0.12s linear 0.2s;
+  right: 1px;
+  bottom: 1px;
+  transition: right 0.12s linear 0.2s, bottom 0.12s linear 0.2s;
 }
 
 .social:hover .initial {
-    width: 120px;
-    height: 120px;
-    transform: rotate(45deg);
-    font-size: 0px;
-    opacity: 0;
-    transition: width 0.2s, height 0.2s, transform 0.2s, font-size 0.2s, opacity 0.1s linear 0.2s;
+  width: 120px;
+  height: 120px;
+  transform: rotate(45deg);
+  font-size: 0px;
+  opacity: 0;
+  transition: width 0.2s, height 0.2s, transform 0.2s, font-size 0.2s,
+    opacity 0.1s linear 0.2s;
 }
 
 .social:hover .social-buttons {
-    opacity: 1;
-    transition: opacity 0s linear 0.2s;
+  opacity: 1;
+  transition: opacity 0s linear 0.2s;
 }
 
 .social:hover .social-buttons .cube:nth-child(1) {
-    left: -4px;
-    top: -4px;
-    transition: left 0.12s linear 0.2s, top 0.12s linear 0.2s, height .25s ease-in, width .25s ease-in;
+  left: -4px;
+  top: -4px;
+  transition: left 0.12s linear 0.2s, top 0.12s linear 0.2s,
+    height 0.25s ease-in, width 0.25s ease-in;
 }
 
 .social:hover .social-buttons .cube:nth-child(2) {
-    right: -4px;
-    top: -4px;
-    transition: right 0.12s linear 0.2s, top 0.12s linear 0.2s, height .25s ease-in, width .25s ease-in;
+  right: -4px;
+  top: -4px;
+  transition: right 0.12s linear 0.2s, top 0.12s linear 0.2s,
+    height 0.25s ease-in, width 0.25s ease-in;
 }
 
 .social:hover .social-buttons .cube:nth-child(3) {
-    left: -4px;
-    bottom: -4px;
-    transition: left 0.12s linear 0.2s, bottom 0.12s linear 0.2s, height .25s ease-in, width .25s ease-in;
+  left: -4px;
+  bottom: -4px;
+  transition: left 0.12s linear 0.2s, bottom 0.12s linear 0.2s,
+    height 0.25s ease-in, width 0.25s ease-in;
 }
 
 .social:hover .social-buttons .cube:nth-child(4) {
-    right: -4px;
-    bottom: -4px;
-    transition: right 0.12s linear 0.2s, bottom 0.12s linear 0.2s, height .25s ease-in, width .25s ease-in;
+  right: -4px;
+  bottom: -4px;
+  transition: right 0.12s linear 0.2s, bottom 0.12s linear 0.2s,
+    height 0.25s ease-in, width 0.25s ease-in;
 }
 
 .social:hover .social-buttons .cube svg {
-    opacity: 1;
-    transition: opacity 0.2s linear 0.2s;
+  opacity: 1;
+  transition: opacity 0.2s linear 0.2s;
 }
 
-/* EFEITO HOVER */
+@media screen and (min-width: 2000px) {
+}
+@media screen and (max-width: 1570px) {
+}
+@media screen and (max-width: 1300px) {
+}
 
+@media screen and (max-width: 1150px) {
+}
+
+@media screen and (max-width: 1020px) {
+}
+
+@media screen and (max-width: 850px) {
+}
+
+@media screen and (max-width: 770px) {
+}
+
+@media screen and (max-width: 550px) {
+}
+
+@media screen and (max-width: 440px) {
+}
+
+@media screen and (max-width: 285px) {
+}
+
+/* LOGIN */
+
+.html {
+  background-color: blueviolet;
+}
+.loginbody {
+  display: flex;
+  align-items: center;
+  margin-top: 8vw;
+  justify-content: space-around;
+}
+.loginimg {
+  width: 100%;
+  max-width: 12vw;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #161616;
+  border-radius: 25px;
+  transition: 0.4s ease-in-out;
+  justify-content: space-around;
+  width: 27vw;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+
+.form:hover {
+  transform: scale(1.05);
+  border: 1px solid blueviolet;
+}
+
+#heading {
+  text-align: center;
+  margin: 1.5vw 0 0;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 1vw;
+}
+.btn a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 0.8vw;
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  border-radius: 0.25vw;
+  margin-right: 1vw;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button1:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+.button2 {
+  padding: 0.5em;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  border-radius: 0.25vw;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button2:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+.button3 {
+  margin-bottom: 2.5vw;
+  padding: 0.5vw;
+  border-radius: 0.25vw;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button3:hover {
+  background-color: red;
+  color: white;
+}
